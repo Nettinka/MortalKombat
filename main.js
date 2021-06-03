@@ -1,8 +1,7 @@
 console.log('Hi');
-const box = document.getElementById('box');
-//const $arenas = document.createElement('div');
+
 const $arenas1 = document.querySelector('.arenas');
-//$arenas.classList.add('arenas');
+
 const $root = document.querySelector('.root');
 
 const player1 = {
@@ -33,8 +32,8 @@ function createPlayer(playerClass, player){
 
     const $life = document.createElement('div');
     $life.classList.add('life');
-    $life.innerText = player.hp;
-    $life.style.width = '100%';
+    
+    $life.style.width = player.hp + '%';
     $progressbar.appendChild($life);
     
     $player1.appendChild($progressbar);

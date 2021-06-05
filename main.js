@@ -2,7 +2,7 @@ console.log('Hi');
 
 const $arenas1 = document.querySelector('.arenas');
 
-const $root = document.querySelector('.root');
+//const $root = document.querySelector('.root');
 
 const player1 = {
     name: 'Cobra',
@@ -53,7 +53,6 @@ function createPlayer(playerClass, player){
     
     $arenas1.appendChild($player1);
 
-    $root.appendChild($arenas1);
 }
 createPlayer('player1', player1);
 createPlayer('player2', player2);
